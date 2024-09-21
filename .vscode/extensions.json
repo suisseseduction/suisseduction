@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode", // Prettier extension for formatting
+    "dbaeumer.vscode-eslint", // ESLint for linting JavaScript
+    "hookyqr.beautify", // Another popular code formatter
+    "coenraads.bracket-pair-colorizer", // Extension for highlighting matching brackets
+    "formulahendry.auto-close-tag", // Automatically closes HTML/XML tags
+    "formulahendry.auto-rename-tag" // Automatically renames paired HTML/XML tags
+  ]
+}
