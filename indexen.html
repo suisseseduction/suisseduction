@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es" class="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta
-      lang="en"
       name="description"
       content="Seduction and dating coach in Lausanne and Geneva."
     />
@@ -18,15 +17,18 @@
     <title>Dating & seduction private coach in Switzerland</title>
     <link rel="icon" href="img/image(2).png" />
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <link rel="canonical" href="https://www.suisseduction.ch/indexen.html" />
+    <link href="css/tailwind.css" rel="stylesheet" />
 
-    <!-- Custom Fonts -->
+    <!-- Font Awesome -->
     <link
       href="vendor/font-awesome/css/font-awesome.min.css"
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
@@ -38,338 +40,272 @@
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
       rel="stylesheet"
       type="text/css"
     />
-
-    <!-- Theme CSS -->
-    <link href="css/agency.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top" class="index">
+  <body id="page-top" class="font-body text-gray-800 antialiased">
     <!-- Navigation -->
     <nav
       id="mainNav"
-      class="navbar navbar-default navbar-custom navbar-fixed-top"
+      class="fixed top-0 w-full bg-dark py-4 transition-all duration-300"
+      style="background-color: #222222 !important; z-index: 200 !important"
     >
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            Menu
-            <i class="fa fa-bars"></i>
-          </button>
-          <img
-            src="img/image(1).png"
-            alt="Suisse Seduction logo"
-          />
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
+        <a href="#page-top">
+          <img src="img/image(1).png" alt="Suisse Seduction logo" class="h-10" />
+        </a>
+
+        <!-- Desktop nav -->
+        <div class="hidden items-center space-x-6 md:flex">
+          <a href="#about" class="nav-link page-scroll">The process</a>
+          <a href="#services" class="nav-link page-scroll">Services</a>
+          <a href="#prices" class="nav-link page-scroll">Prices</a>
+          <a href="#contact" class="nav-link page-scroll">Contact</a>
+          <button id="EnglishLanguage" class="nav-link cursor-pointer text-primary font-bold">EN</button>
+          <button id="FrenchLanguage" class="nav-link cursor-pointer text-gray-400">FR</button>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="hidden">
-              <a href="#page-top"></a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#about" lang="en">The process</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#services" lang="en">Services</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#prices" lang="en">Prices</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#contact" lang="en">Contact</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li
-              class="btn-group btn-group-toggle"
-              id="LanguageBar"
-              data-toggle="buttons"
-            >
-              <button
-                class="btn btn-secondary active btn-sm"
-                id="EnglishLanguage"
-                style="color: grey"
-              >
-                <strong>EN</strong>
-              </button>
-              <button
-                class="btn btn-secondary active btn-sm"
-                id="FrenchLanguage"
-                style="color: grey"
-              >
-                <strong>FR</strong>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+        <!-- Mobile hamburger -->
+        <button
+          id="mobileToggle"
+          class="flex items-center gap-1 rounded bg-primary px-3 py-2 text-xs font-bold uppercase text-dark md:hidden"
+          aria-label="Toggle navigation"
+        >
+          Menu <i class="fa fa-bars"></i>
+        </button>
       </div>
-      <!-- /.container-fluid -->
+
+      <!-- Mobile nav menu -->
+      <div id="mobileNav" class="hidden bg-dark px-6 pb-4 pt-2 md:hidden">
+        <a href="#about" class="nav-link page-scroll block py-2">The process</a>
+        <a href="#services" class="nav-link page-scroll block py-2">Services</a>
+        <a href="#prices" class="nav-link page-scroll block py-2">Prices</a>
+        <a href="#contact" class="nav-link page-scroll block py-2">Contact</a>
+        <div class="mt-2 flex gap-4">
+          <button id="EnglishLanguageMobile" class="nav-link cursor-pointer text-primary font-bold">EN</button>
+          <button id="FrenchLanguageMobile" class="nav-link cursor-pointer text-gray-400">FR</button>
+        </div>
+      </div>
     </nav>
 
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <div class="intro-text">
-          <img src="img/image(1).png" alt="Suisse Seduction logo" />
-          <div class="intro-heading" lang="en">
-            Private seduction & dating coach
-          </div>
-          <!-- <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
+    <!-- Header / Hero -->
+    <header
+      class="flex items-center justify-center bg-cover bg-center text-white"
+      style="background-image: url('img/header-bg.jpg'); padding-top: 120px; padding-bottom: 80px; min-height: 100vh;"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 px-4 text-center">
+        <img src="img/image(1).png" alt="Suisse Seduction logo" class="mx-auto mb-8 h-24" />
+        <div class="font-heading text-3xl font-bold uppercase tracking-wider md:text-5xl">
+          Private seduction &amp; dating coach
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="bg-light-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading" lang="es">The process</h2>
-            <h3 class="section-subheading text-muted" lang="es">
-              The coaching step-by-step
-            </h3>
-          </div>
+    <section id="about" class="bg-light py-24">
+      <div class="container mx-auto px-6">
+        <div class="text-center">
+          <h2 class="section-heading">The process</h2>
+          <p class="section-subheading">The coaching step-by-step</p>
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img
-                    class="img-circle img-responsive circularaboutimage"
-                    src="img/about/mision.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 lang="en">Who I am?</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted" lang="en">
-                      I have been in the pick-up community for 12 years, I have
-                      learned with the best coaches and I have lived hundreds of
-                      adventures thanks to the art of picking-up. After a long
-                      process, I managed to connect and sleep with dream-girls,
-                      more than 200 in total being very selective. Now my
-                      mission is to transmit my knowledge to you in the most
-                      practical, simple and effective way. I have mentored
-                      dozens of students with incredible results. Are you ready
-                      to be next?
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img
-                    class="img-circle img-responsive circularaboutimage"
-                    src="img/about/valores.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 lang="en">Listening to your needs</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted" lang="en">
-                      Let's start at the beginning, a first call absolutely
-                      confidential and without engagement. We will get to know
-                      each other during the call. I will listen to your needs
-                      and where you are in dealing with the girls. We will
-                      analyze your strengths and weaknesses. Depending on the
-                      call we will freely decide whether we want to engage in
-                      coaching or not.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img
-                    class="img-circle img-responsive circularaboutimage"
-                    src="img/about/fundacion.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 lang="en">Personalized program</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted" lang="en">
-                      If we decide to start our adventure, I will make a
-                      personalized and detailed program adapted to your
-                      objectives in order to achieve them. I will also send you
-                      a guide with my own pick-up method that explains in detail
-                      my whole process, from how to approach a girl until she is
-                      madly in love with you.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img
-                    class="img-circle img-responsive circularaboutimage"
-                    src="img/about/recursos.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 lang="en">Action!</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted" lang="en">
-                      Now it is time to take action! All the theory in the world
-                      is useless without practice. We will go out together in
-                      Lausanne or Geneva. It is your choice if you prefer to go
-                      out either at night clubbing and pubbing (night game) or
-                      during the day at the street (day game). Firstly, I will
-                      open some girls to provide you some practical examples and
-                      then you can reproduce them. We will gradually go from the
-                      simplest to the most complicated, I can assure you that we
-                      will have a lot of fun.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-image">
-                <div class="timeline-image">
-                  <img
-                    class="img-circle img-responsive circularaboutimage"
-                    src="img/about/instalaciones.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 lang="en">Results</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted" lang="en">
-                      On each interaction you make, I will give you my feedback
-                      and advice on how to improve. Body language, what to say
-                      in each moment of the conversation to keep the other
-                      person comfortable, what message to send to keep their
-                      interest... Each interaction with a girl will be better
-                      than the previous one. It's a matter of time that you end
-                      up with the girl of your dreams. What at first seemed
-                      impossible will become inevitable.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img src="img/about/mision.jpg" alt="" />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Who I am?</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  I have been in the pick-up community for 12 years, I have
+                  learned with the best coaches and I have lived hundreds of
+                  adventures thanks to the art of picking-up. After a long
+                  process, I managed to connect and sleep with dream-girls, more
+                  than 200 in total being very selective. Now my mission is to
+                  transmit my knowledge to you in the most practical, simple and
+                  effective way. I have mentored dozens of students with
+                  incredible results. Are you ready to be next?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img src="img/about/valores.jpg" alt="" />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Listening to your needs</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Let's start at the beginning, a first call absolutely
+                  confidential and without engagement. We will get to know each
+                  other during the call. I will listen to your needs and where
+                  you are in dealing with the girls. We will analyze your
+                  strengths and weaknesses. Depending on the call we will freely
+                  decide whether we want to engage in coaching or not.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img src="img/about/fundacion.jpg" alt="" />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Personalized program</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  If we decide to start our adventure, I will make a personalized
+                  and detailed program adapted to your objectives in order to
+                  achieve them. I will also send you a guide with my own pick-up
+                  method that explains in detail my whole process, from how to
+                  approach a girl until she is madly in love with you.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img src="img/about/recursos.jpg" alt="" />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Action!</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Now it is time to take action! All the theory in the world is
+                  useless without practice. We will go out together in Lausanne or
+                  Geneva. It is your choice if you prefer to go out either at
+                  night clubbing and pubbing (night game) or during the day at the
+                  street (day game). Firstly, I will open some girls to provide
+                  you some practical examples and then you can reproduce them. We
+                  will gradually go from the simplest to the most complicated, I
+                  can assure you that we will have a lot of fun.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img src="img/about/instalaciones.jpg" alt="" />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Results</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  On each interaction you make, I will give you my feedback and
+                  advice on how to improve. Body language, what to say in each
+                  moment of the conversation to keep the other person comfortable,
+                  what message to send to keep their interest... Each interaction
+                  with a girl will be better than the previous one. It's a matter
+                  of time that you end up with the girl of your dreams. What at
+                  first seemed impossible will become inevitable.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- Services Section -->
-    <!-- Services Section -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading" lang="fr">Services</h2>
-            <h3 class="section-subheading text-muted" lang="fr">
-              Everything I can do for you.
-            </h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+    <section id="services" class="bg-white px-6 py-24">
+      <div class="mx-auto max-w-6xl">
+        <h2 class="section-heading">Services</h2>
+        <p class="section-subheading">Everything I can do for you.</p>
+
+        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Service 1 -->
+          <div class="text-center">
+            <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-file-o fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading" lang="fr">Simplified Theory</h4>
-            <p class="text-muted" lang="fr">
+            <h4 class="mb-3 font-heading text-lg font-bold text-gray-900">Simplified Theory</h4>
+            <p class="text-gray-600">
               From day one, the student will receive a book with my step-by-step
-              method for attracting the girl of his dreams. It’s an exclusive
-              book that I’ve been writing continuously for the past 5 years.
+              method for attracting the girl of his dreams. It's an exclusive book
+              that I've been writing continuously for the past 5 years.
             </p>
           </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+
+          <!-- Service 2 -->
+          <div class="text-center">
+            <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading" lang="fr">Increase Your Value</h4>
-            <p class="text-muted" lang="fr">
-              There’s only one chance to make a first impression, and your
-              perceived value matters. We’ll work together on your outfit, body
+            <h4 class="mb-3 font-heading text-lg font-bold text-gray-900">Increase Your Value</h4>
+            <p class="text-gray-600">
+              There's only one chance to make a first impression, and your
+              perceived value matters. We'll work together on your outfit, body
               language, voice, and social media presence.
             </p>
           </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+
+          <!-- Service 3 -->
+          <div class="text-center">
+            <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading" lang="fr">Motivation</h4>
-            <p class="text-muted" lang="fr">
-              I’ll push you to practice and help you overcome your fear of
-              rejection. I’ve been there—I was rejected hundreds of times at
-              first. We’re in this together, and I’ll make sure we see results.
+            <h4 class="mb-3 font-heading text-lg font-bold text-gray-900">Motivation</h4>
+            <p class="text-gray-600">
+              I'll push you to practice and help you overcome your fear of
+              rejection. I've been there — I was rejected hundreds of times at
+              first. We're in this together, and I'll make sure we see results.
             </p>
           </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+
+          <!-- Service 4 -->
+          <div class="text-center">
+            <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading" lang="fr">Dating Apps</h4>
-            <p class="text-muted" lang="fr">
-              Optimize your profile with new professional photos and a
-              captivating description, designed to lead to deep conversations
-              and multiply your matches on Tinder and Bumble.
+            <h4 class="mb-3 font-heading text-lg font-bold text-gray-900">Dating Apps</h4>
+            <p class="text-gray-600">
+              Optimize your profile with new professional photos and a captivating
+              description, designed to lead to deep conversations and multiply
+              your matches on Tinder and Bumble.
             </p>
           </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+
+          <!-- Service 5 -->
+          <div class="text-center">
+            <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-certificate fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 lang="es" class="service-heading" lang="fr">
-              Nightgame & Daygame
-            </h4>
-            <p lang="es" class="text-muted">
-              Night outings in pubs/clubs (10 PM-5 AM) or day street game in
-              busy areas of Lausanne and Geneva. Debriefing and feedback after
-              each session to help you improve your game skills.
+            <h4 class="mb-3 font-heading text-lg font-bold text-gray-900">Nightgame &amp; Daygame</h4>
+            <p class="text-gray-600">
+              Night outings in pubs/clubs (10 PM-5 AM) or day street game in busy
+              areas of Lausanne and Geneva. Debriefing and feedback after each
+              session to help you improve your game skills.
             </p>
           </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+
+          <!-- Service 6 -->
+          <div class="text-center">
+            <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading" lang="fr">Text Game</h4>
-            <p class="text-muted" lang="fr">
+            <h4 class="mb-3 font-heading text-lg font-bold text-gray-900">Text Game</h4>
+            <p class="text-gray-600">
               I will analyze your text messages to optimize every message you
               send, time them properly, and always keep the conversation
               stimulating, leading to dates and relationships.
@@ -379,242 +315,194 @@
       </div>
     </section>
 
-    <!-- New GIF Section 
-    <section id="gif-section" class="bg-light-gray">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="section-heading" lang="en">some Results</h2>
-            <h3 class="section-subheading text-muted" lang="en">
-              Of what you can achieve.
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <img
-            src="img/Animation.gif"
-            alt="Animated GIF"
-            style="max-width: 100%; height: auto"
-          />
-        </div>
-      </div>
-    </section>-->
-
     <!-- Prices Section -->
-    <section id="prices">
-      <div class="container text-center"></div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading" lang="en">Prices</h2>
-          <h3 class="section-subheading text-muted" lang="en">
-            The first 20 mins call is free.
-          </h3>
-        </div>
-      </div>
-      <div class="container">
-        <table class="table">
-          <tr>
-            <td lang="en"><strong>Service</strong></td>
-            <td lang="en"><strong>Format</strong></td>
-            <td lang="en"><strong>Price</strong></td>
-          </tr>
-          <tr>
-            <td lang="en">
-              <strong>
-                1st coaching
-                <br />
-                Introduction
-              </strong>
-            </td>
-            <td lang="en">Videocall (20 mins)</td>
-            <td lang="en"><strong>Free</strong></td>
-          </tr>
-          <tr>
-            <td lang="en"><strong>Online coaching</strong></td>
-            <td lang="en">
-              Videocall
-              <br />
-              We will discuss any topic of your choice.
-              <br />
-              Texting strategies, dating tips, Tinder/Bumble tricks etc.
-            </td>
-            <td lang="en">90 CHF/hour</td>
-          </tr>
-          <tr>
-            <td lang="en">
-              <strong>
-                Nightgame
-                <br />
-                Pub / Nightclub
-              </strong>
-            </td>
-            <td lang="en">
-              Face to face
-              <br />
-              In Lausanne or Geneva
-              <br />
-              Friday or Saturday night
-            </td>
-            <td lang="en">
-              120 CHF/hour
-              <br />
-              400 CHF per night
-            </td>
-          </tr>
-          <tr>
-            <td lang="en"><strong>Daygame</strong></td>
-            <td lang="en">
-              Face to face
-              <br />
-              In Lausanne or Geneva
-              <br />
-              On Saturdays exclusevely
-            </td>
-            <td lang="en">150 CHF/hour</td>
-          </tr>
+    <section id="prices" class="bg-light px-6 py-24">
+      <div class="mx-auto max-w-5xl">
+        <h2 class="section-heading">Prices</h2>
+        <p class="section-subheading">The first 20 mins call is free.</p>
 
-          <tr>
-            <td lang="en"><strong>Dating app photoshooting</strong></td>
-            <td lang="en">
-              5 retouched professional photos and styling coaching.
-              <br />
-              The service is divided in two parts:
-              <br />
-              - One for finding your strenghts and improve your styling
-              <br />
-              - Another one for the actual shooting
-            </td>
-            <td lang="en">600 CHF</td>
-          </tr>
-          <tr>
-            <td lang="en"><strong>Immersion trip</strong></td>
-            <td lang="en">
-              A weekend in your favorite city, from friday ninght to Sunday
-              evening.
-              <br />
-              The most uplifting and life-changing experience I can offer you.
-              <br />
-              Money-back garantee if you don't obtain results.
-            </td>
-            <td lang="en">2400 CHF</td>
-          </tr>
-        </table>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-white shadow-card rounded-2xl overflow-hidden">
+            <thead>
+              <tr class="bg-dark text-white">
+                <th class="px-6 py-4 text-left font-heading text-sm font-bold uppercase">Service</th>
+                <th class="px-6 py-4 text-left font-heading text-sm font-bold uppercase">Format</th>
+                <th class="px-6 py-4 text-right font-heading text-sm font-bold uppercase">Price</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-heading text-sm font-bold text-gray-900">Seduction guide (PDF)</td>
+                <td class="px-6 py-4 text-sm text-gray-600">A summary of my method, filled with effective techniques for every situation you may encounter.</td>
+                <td class="px-6 py-4 text-right font-heading text-sm font-bold text-primary">Free</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-heading text-sm font-bold text-gray-900">1st coaching — Introduction</td>
+                <td class="px-6 py-4 text-sm text-gray-600">Videocall (20 mins)</td>
+                <td class="px-6 py-4 text-right font-heading text-sm font-bold text-primary">Free</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-heading text-sm font-bold text-gray-900">Online coaching</td>
+                <td class="px-6 py-4 text-sm text-gray-600">Videocall. We will discuss any topic of your choice. Texting strategies, dating tips, Tinder/Bumble tricks etc.</td>
+                <td class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900">90 CHF/hour</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-heading text-sm font-bold text-gray-900">Nightgame — Pub / Nightclub</td>
+                <td class="px-6 py-4 text-sm text-gray-600">Face to face. In Lausanne or Geneva. Friday or Saturday night.</td>
+                <td class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900">120 CHF/hour<br /><span class="text-xs font-normal text-gray-500">400 CHF per night</span></td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-heading text-sm font-bold text-gray-900">Daygame</td>
+                <td class="px-6 py-4 text-sm text-gray-600">Face to face. In Lausanne or Geneva. On Saturdays exclusively.</td>
+                <td class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900">150 CHF/hour</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-heading text-sm font-bold text-gray-900">Dating app photoshooting</td>
+                <td class="px-6 py-4 text-sm text-gray-600">5 retouched professional photos and styling coaching. The service is divided in two parts: one for finding your strengths and improve your styling, another one for the actual shooting.</td>
+                <td class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900">600 CHF</td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition-colors">
+                <td class="px-6 py-4 font-heading text-sm font-bold text-gray-900">Immersion trip</td>
+                <td class="px-6 py-4 text-sm text-gray-600">A weekend in your favorite city, from Friday night to Sunday evening. The most uplifting and life-changing experience. Money-back guarantee if you don't obtain results.</td>
+                <td class="px-6 py-4 text-right font-heading text-lg font-bold text-primary">2400 CHF</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="mt-8 text-center font-body text-sm text-gray-500">
+          The first 20 minutes of the call are free.
+        </p>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contact</h2>
-            <h3 class="section-subheading text-muted" id="contact-subheading">
-              Ready to transform your love life?
-              <br />
-              Get in touch for personalized coaching
-              <br />
-              and receive my free seduction guide.
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form action="https://formspree.io/f/xqaawzdl" method="POST">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name *"
-                      name="name"
-                      required
-                      data-validation-required-message="Introduzca su nombre."
-                      lang="en"
-                      required
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Your e-mail*"
-                      name="email"
-                      required
-                      data-validation-required-message="Introduzca su correo electrónico."
-                      lang="en"
-                      required
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
+    <section id="contact" class="bg-dark px-6 py-24">
+      <div class="mx-auto max-w-4xl">
+        <h2 class="section-heading text-white">Contact</h2>
+        <p class="section-subheading text-gray-400">
+          Ready to transform your love life?<br />
+          Get in touch for personalized coaching<br />
+          and receive my free seduction guide.
+        </p>
 
-                  <div class="form-group">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="Your phone number*"
-                      name="phone"
-                      required
-                      data-validation-required-message="Introduzca su numero de teléfono."
-                      lang="en"
-                      required
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea
-                      class="form-control"
-                      placeholder="Introduce yourself *"
-                      name="message"
-                      required
-                      data-validation-required-message="Introduzca un mensaje."
-                      lang="en"
-                      required
-                    ></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button
-                    type="submit"
-                    id="SubmitMailES"
-                    class="btn btn-xl"
-                    lang="en"
-                  >
-                    Send
-                  </button>
-                </div>
-              </div>
-            </form>
+        <form
+          action="https://formspree.io/f/xqaawzdl"
+          method="POST"
+          class="mx-auto max-w-2xl"
+          name="contactForm"
+        >
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <input
+                type="text"
+                name="name"
+                required
+                class="form-input"
+                placeholder="Your Name *"
+                data-validation-required-message="Please enter your name."
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                required
+                class="form-input"
+                placeholder="Your e-mail *"
+                data-validation-required-message="Please enter your email address."
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="phone"
+                required
+                class="form-input"
+                placeholder="Your phone number *"
+                data-validation-required-message="Please enter your phone number."
+              />
+            </div>
+            <div class="md:col-span-2">
+              <textarea
+                name="message"
+                rows="6"
+                required
+                class="form-input"
+                placeholder="Your message *"
+                data-validation-required-message="Please enter a message."
+              ></textarea>
+            </div>
+            <div class="md:col-span-2 text-center">
+              <div id="success"></div>
+              <button type="submit" id="SubmitMailEN" class="btn-primary text-lg px-10 py-4">
+                Send
+              </button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <ul class="list-inline">
-          <li>
-            <i class="fa fa-envelope-o fa-3x"></i>
-          </li>
-          <li class="emailinfo">info@suisseduction.ch</li>
-        </ul>
+    <!-- Footer -->
+    <footer class="bg-dark-darker px-6 py-12">
+      <div class="mx-auto max-w-6xl text-center">
+        <i class="fa fa-envelope-o fa-3x text-gray-400 mb-4 inline-block"></i>
+        <p class="font-body text-base text-gray-400">info@suisseduction.ch</p>
+        <p class="mt-4 font-body text-sm text-gray-600">
+          &copy; 2024 Suisse Seduction. All rights reserved.
+        </p>
       </div>
     </footer>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/agency.min.js"></script>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/change_language.js"></script>
-    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="js/sweetalert.js"></script> -->
+    <script src="js/change_language_en.js"></script>
+
+    <script>
+      // Mobile nav toggle
+      document.getElementById('mobileToggle').addEventListener('click', function () {
+        document.getElementById('mobileNav').classList.toggle('hidden');
+      });
+
+      // Close mobile nav on link click
+      document.querySelectorAll('#mobileNav a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          document.getElementById('mobileNav').classList.add('hidden');
+        });
+      });
+
+      // Smooth scroll for all anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // Add shadow to navbar on scroll
+      var nav = document.getElementById('mainNav');
+      function updateNav() {
+        if (window.scrollY > 80) {
+          nav.classList.add('shadow-lg');
+        } else {
+          nav.classList.remove('shadow-lg');
+        }
+      }
+      window.addEventListener('scroll', updateNav);
+      updateNav();
+
+      // Language switcher
+      $('#EnglishLanguage, #EnglishLanguageMobile').click(function () {
+        window.location.href = 'indexen.html';
+      });
+      $('#FrenchLanguage, #FrenchLanguageMobile').click(function () {
+        window.location.href = 'index.html';
+      });
+    </script>
   </body>
 </html>
