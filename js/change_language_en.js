@@ -13,8 +13,8 @@ $('#EnglishLanguage').click(function () {
 });
 
 $('#FrenchLanguage').click(function () {
-    window.location.href = 'indexfr.html';
-    //console.log('English');
+    window.location.href = 'index.html';
+    //console.log('French');
 });
 
 //console.log(redirected)
