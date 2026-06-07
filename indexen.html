@@ -38,7 +38,11 @@
     />
   </head>
 
-  <body id="page-top" class="font-body text-gray-800 antialiased">
+  <body
+    id="page-top"
+    class="font-body text-gray-800 antialiased"
+    style="background-color: #222222"
+  >
     <!-- Navigation -->
     <nav
       id="mainNav"
@@ -60,18 +64,22 @@
           <a href="#services" class="nav-link page-scroll">Services</a>
           <a href="#prices" class="nav-link page-scroll">Prices</a>
           <a href="#contact" class="nav-link page-scroll">Contact</a>
-          <button
-            id="EnglishLanguage"
-            class="nav-link cursor-pointer text-primary font-bold"
-          >
-            EN
-          </button>
-          <button
-            id="FrenchLanguage"
-            class="nav-link cursor-pointer text-gray-400"
-          >
-            FR
-          </button>
+          <span class="text-gray-600 select-none">|</span>
+          <div class="flex items-center gap-4">
+            <button
+              id="EnglishLanguage"
+              class="nav-link cursor-pointer text-primary font-bold"
+            >
+              EN
+            </button>
+            <span class="text-gray-600 select-none">/</span>
+            <button
+              id="FrenchLanguage"
+              class="nav-link cursor-pointer text-gray-400"
+            >
+              FR
+            </button>
+          </div>
         </div>
 
         <!-- Mobile hamburger -->
@@ -91,13 +99,14 @@
         <a href="#services" class="nav-link page-scroll block py-2">Services</a>
         <a href="#prices" class="nav-link page-scroll block py-2">Prices</a>
         <a href="#contact" class="nav-link page-scroll block py-2">Contact</a>
-        <div class="mt-2 flex gap-4">
+        <div class="mt-4 flex items-center gap-4 border-t border-gray-700 pt-4">
           <button
             id="EnglishLanguageMobile"
             class="nav-link cursor-pointer text-primary font-bold"
           >
             EN
           </button>
+          <span class="text-gray-600 select-none">/</span>
           <button
             id="FrenchLanguageMobile"
             class="nav-link cursor-pointer text-gray-400"
@@ -159,7 +168,7 @@
                   learned with the best coaches and I have lived hundreds of
                   adventures thanks to the art of picking-up. After a long
                   process, I managed to connect and sleep with dream-girls, more
-                  than 200 in total being very selective. Now my mission is to
+                  than 300 in total being very selective. Now my mission is to
                   transmit my knowledge to you in the most practical, simple and
                   effective way. I have mentored dozens of students with
                   incredible results. Are you ready to be next?
@@ -502,19 +511,16 @@
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
-                  Nightgame — Pub / Nightclub
+                  Nightgame —
+                  <br />
+                  Pub / Nightclub
                 </td>
                 <td class="px-6 py-4 text-sm text-gray-600">
                   Face to face. In Lausanne or Geneva. Friday or Saturday night.
                 </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900"
-                >
-                  120 CHF/hour
-                  <br />
-                  <span class="text-xs font-normal text-gray-500">
-                    400 CHF per night
-                  </span>
+                <td class="px-6 py-4 text-right font-heading font-bold">
+                  <div class="text-sm text-gray-900">120 CHF/hour</div>
+                  <div class="text-sm text-primary">400 CHF/evening</div>
                 </td>
               </tr>
               <tr
@@ -574,7 +580,7 @@
                   Money-back guarantee if you don't obtain results.
                 </td>
                 <td
-                  class="px-6 py-4 text-right font-heading text-lg font-bold text-primary"
+                  class="px-6 py-4 text-right font-heading text-sm font-bold text-primary"
                 >
                   2400 CHF
                 </td>

@@ -38,7 +38,11 @@
     />
   </head>
 
-  <body id="page-top" class="font-body text-gray-800 antialiased">
+  <body
+    id="page-top"
+    class="font-body text-gray-800 antialiased"
+    style="background-color: #222222"
+  >
     <!-- Navigation -->
     <nav
       id="mainNav"
@@ -60,18 +64,22 @@
           <a href="#services" class="nav-link page-scroll">Services</a>
           <a href="#prices" class="nav-link page-scroll">Tarifs</a>
           <a href="#contact" class="nav-link page-scroll">Contact</a>
-          <button
-            id="EnglishLanguage"
-            class="nav-link cursor-pointer text-gray-400"
-          >
-            EN
-          </button>
-          <button
-            id="FrenchLanguage"
-            class="nav-link cursor-pointer text-primary font-bold"
-          >
-            FR
-          </button>
+          <span class="text-gray-600 select-none">|</span>
+          <div class="flex items-center gap-4">
+            <button
+              id="EnglishLanguage"
+              class="nav-link cursor-pointer text-gray-400"
+            >
+              EN
+            </button>
+            <span class="text-gray-600 select-none">/</span>
+            <button
+              id="FrenchLanguage"
+              class="nav-link cursor-pointer text-primary font-bold"
+            >
+              FR
+            </button>
+          </div>
         </div>
 
         <!-- Mobile hamburger -->
@@ -91,13 +99,14 @@
         <a href="#services" class="nav-link page-scroll block py-2">Services</a>
         <a href="#prices" class="nav-link page-scroll block py-2">Tarifs</a>
         <a href="#contact" class="nav-link page-scroll block py-2">Contact</a>
-        <div class="mt-2 flex gap-4">
+        <div class="mt-4 flex items-center gap-4 border-t border-gray-700 pt-4">
           <button
             id="EnglishLanguageMobile"
             class="nav-link cursor-pointer text-gray-400"
           >
             EN
           </button>
+          <span class="text-gray-600 select-none">/</span>
           <button
             id="FrenchLanguageMobile"
             class="nav-link cursor-pointer text-primary font-bold"
@@ -135,8 +144,16 @@
     <section id="about" class="bg-light py-24">
       <div class="container mx-auto px-6">
         <div class="text-center">
-          <h2 class="section-heading" data-animate="fade-in-up">Le processus</h2>
-          <p class="section-subheading" data-animate="fade-in-up" data-animate-delay="100">Comment se déroulera le coaching</p>
+          <h2 class="section-heading" data-animate="fade-in-up">
+            Le processus
+          </h2>
+          <p
+            class="section-subheading"
+            data-animate="fade-in-up"
+            data-animate-delay="100"
+          >
+            Comment se déroulera le coaching
+          </p>
         </div>
         <ul class="timeline">
           <li data-animate="fade-in-left" data-animate-delay="100">
@@ -153,7 +170,7 @@
                   appris avec les meilleurs coachs et j'ai vécu de nombreuses
                   aventures grâce à l'art de la drague. Après un long processus,
                   j'ai réussi à connecter et à coucher avec les filles de mes
-                  rêves, plus de 200 au total en étant très sélectif.
+                  rêves, plus de 300 au total en étant très sélectif.
                   Maintenant, ma mission est de te transmettre mes connaissances
                   de la manière la plus pratique, simple et efficace possible.
                   J'ai encadré des dizaines d'élèves avec des résultats
@@ -162,7 +179,11 @@
               </div>
             </div>
           </li>
-          <li class="timeline-inverted" data-animate="fade-in-right" data-animate-delay="250">
+          <li
+            class="timeline-inverted"
+            data-animate="fade-in-right"
+            data-animate-delay="250"
+          >
             <div class="timeline-image">
               <img src="img/about/valores.jpg" alt="" />
             </div>
@@ -203,7 +224,11 @@
               </div>
             </div>
           </li>
-          <li class="timeline-inverted" data-animate="fade-in-right" data-animate-delay="550">
+          <li
+            class="timeline-inverted"
+            data-animate="fade-in-right"
+            data-animate-delay="550"
+          >
             <div class="timeline-image">
               <img src="img/about/recursos.jpg" alt="" />
             </div>
@@ -257,11 +282,21 @@
     <section id="services" class="bg-white px-6 py-24">
       <div class="mx-auto max-w-6xl">
         <h2 class="section-heading" data-animate="fade-in-up">Services</h2>
-        <p class="section-subheading" data-animate="fade-in-up" data-animate-delay="100">Tout ce que je peux faire pour toi.</p>
+        <p
+          class="section-subheading"
+          data-animate="fade-in-up"
+          data-animate-delay="100"
+        >
+          Tout ce que je peux faire pour toi.
+        </p>
 
         <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           <!-- Service 1 -->
-          <div class="text-center" data-animate="fade-in-up" data-animate-delay="100">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="100"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-file-o fa-stack-1x fa-inverse"></i>
@@ -277,7 +312,11 @@
           </div>
 
           <!-- Service 2 -->
-          <div class="text-center" data-animate="fade-in-up" data-animate-delay="200">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="200"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
@@ -293,7 +332,11 @@
           </div>
 
           <!-- Service 3 -->
-          <div class="text-center" data-animate="fade-in-up" data-animate-delay="300">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="300"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
@@ -310,7 +353,11 @@
           </div>
 
           <!-- Service 4 -->
-          <div class="text-center" data-animate="fade-in-up" data-animate-delay="400">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="400"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
@@ -326,7 +373,11 @@
           </div>
 
           <!-- Service 5 -->
-          <div class="text-center" data-animate="fade-in-up" data-animate-delay="500">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="500"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-certificate fa-stack-1x fa-inverse"></i>
@@ -342,7 +393,11 @@
           </div>
 
           <!-- Service 6 -->
-          <div class="text-center" data-animate="fade-in-up" data-animate-delay="600">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="600"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
@@ -364,7 +419,11 @@
     <section id="prices" class="bg-light px-6 py-24">
       <div class="mx-auto max-w-5xl">
         <h2 class="section-heading" data-animate="fade-in-up">Tarifs</h2>
-        <p class="section-subheading" data-animate="fade-in-up" data-animate-delay="100">
+        <p
+          class="section-subheading"
+          data-animate="fade-in-up"
+          data-animate-delay="100"
+        >
           Les 20 premières minutes d'appel sont gratuites.
         </p>
 
@@ -392,7 +451,11 @@
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-              <tr class="hover:bg-gray-50 transition-colors" data-animate="fade-in-up" data-animate-delay="200">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="200"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -408,7 +471,11 @@
                   Gratuit
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors" data-animate="fade-in-up" data-animate-delay="300">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="300"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -423,7 +490,11 @@
                   Gratuit
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors" data-animate="fade-in-up" data-animate-delay="400">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="400"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -440,26 +511,29 @@
                   90 CHF/heure
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors" data-animate="fade-in-up" data-animate-delay="500">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="500"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
-                  Nightgame — Pub / Discothèque
+                  Nightgame — Pub / Club
                 </td>
                 <td class="px-6 py-4 text-sm text-gray-600">
                   En face à face. À Lausanne ou Genève. Vendredi ou samedi soir.
                 </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900"
-                >
-                  120 CHF/heure
-                  <br />
-                  <span class="text-xs font-normal text-gray-500">
-                    400 CHF par soirée
-                  </span>
+                <td class="px-6 py-4 text-right font-heading font-bold">
+                  <div class="text-sm text-gray-900">120 CHF/heure</div>
+                  <div class="text-sm text-primary">400 CHF/soirée</div>
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors" data-animate="fade-in-up" data-animate-delay="600">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="600"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -474,7 +548,11 @@
                   150 CHF/heure
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors" data-animate="fade-in-up" data-animate-delay="700">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="700"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -492,7 +570,11 @@
                   600 CHF
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors" data-animate="fade-in-up" data-animate-delay="800">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="800"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -504,7 +586,7 @@
                   transformatrice. Garantie satisfait ou remboursé.
                 </td>
                 <td
-                  class="px-6 py-4 text-right font-heading text-lg font-bold text-primary"
+                  class="px-6 py-4 text-right font-heading text-sm font-bold text-primary"
                 >
                   2400 CHF
                 </td>
@@ -512,18 +594,20 @@
             </tbody>
           </table>
         </div>
-
-        <p class="mt-8 text-center font-body text-sm text-gray-500" data-animate="fade-in" data-animate-delay="900">
-          Les 20 premières minutes d'appel sont offertes.
-        </p>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="bg-dark px-6 py-24">
       <div class="mx-auto max-w-4xl">
-        <h2 class="section-heading text-white" data-animate="fade-in-up">Contact</h2>
-        <p class="section-subheading text-gray-400" data-animate="fade-in-up" data-animate-delay="100">
+        <h2 class="section-heading text-white" data-animate="fade-in-up">
+          Contact
+        </h2>
+        <p
+          class="section-subheading text-gray-400"
+          data-animate="fade-in-up"
+          data-animate-delay="100"
+        >
           Prêt à transformer ta vie amoureuse ?
           <br />
           Contacte-moi pour un coaching personnalisé
@@ -531,7 +615,9 @@
           et reçois gratuitement mon guide exclusif de séduction.
         </p>
 
-        <form data-animate="fade-in-up" data-animate-delay="200"
+        <form
+          data-animate="fade-in-up"
+          data-animate-delay="200"
           action="https://formspree.io/f/xqaawzdl"
           method="POST"
           class="mx-auto max-w-2xl"

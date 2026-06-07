@@ -4,6 +4,11 @@
    for suisseduction.ch
    ========================================== */
 
+/* ---------- Body background prevents white gaps ---------- */
+body {
+  background-color: #222;
+}
+
 /* ---------- Respect motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
   [data-animate] {
