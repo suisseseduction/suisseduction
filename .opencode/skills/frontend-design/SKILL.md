@@ -60,12 +60,14 @@ Design in this order — single-page scroll layout:
 8. **Footer:** Dark bg (`#111`), social icons row, copyright text, email link
 
 Extract design tokens from Figma:
+
 - Colors, typography (size/weight/line-height), spacing (gap/padding/margin), border-radius, box-shadow
 - Export assets (background images, icons) if new ones are created
 
 ### 1.3 Present design decisions
 
 For any significant design choice, explain:
+
 - How it reflects the premium coaching brand (e.g., dark = sophistication, blue = trust)
 - How it improves conversion (e.g., prominent CTA, clear pricing, simple form)
 - How it works on mobile
@@ -368,12 +370,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         <i class="fa fa-envelope"></i>
       </a>
     </div>
-    <p class="font-body text-sm text-gray-400">
-      &copy; 2024 Suisse Seduction. Tous droits réservés.
-    </p>
-    <p class="mt-1 font-body text-sm text-gray-500">
-      <a href="mailto:info@suisseduction.ch" class="text-primary hover:underline">info@suisseduction.ch</a>
-    </p>
   </div>
 </section>
 ```
@@ -385,20 +381,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 Reusable component recipes for consistency:
 
 ### Buttons
+
 - `btn-primary` → solid `primary` bg, white text, uppercase, rounded-xl, shadow-button, hover lifts
 - `btn-outline` → primary border, primary text, hover fills primary
 - `btn-ghost` → no bg/border, primary text, hover underline
 
 ### Cards
+
 - Service card: `rounded-2xl bg-white p-8 shadow-card hover:shadow-card-hover text-center`, icon circle, title `font-heading text-xl font-bold`, body `font-body text-gray-600`
 - Pricing card: same shape, price `font-heading text-4xl font-bold text-primary`, CTA at bottom
 - Timeline card: `flex md:flex-row md:flex-row-reverse items-center gap-6`, image node `rounded-full`, panel `rounded-2xl bg-white p-6 shadow-card`
 
 ### Section headings
+
 - `h2.section-heading`: uppercase, centered, `text-4xl`, `font-heading`, `text-gray-900`
 - `p.section-subheading`: italic, centered, `font-body`, `text-base`, `text-gray-500`, bottom margin
 
 ### Form inputs
+
 - Shared class set: `w-full rounded-xl bg-white/10 px-5 py-4 font-body text-white placeholder-gray-400 backdrop-blur-sm transition-all duration-200 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary`
 - Inside a `<label>` wrapper with `font-heading text-sm font-bold uppercase tracking-wider`
 
@@ -416,6 +416,7 @@ Implement mobile-first:
 | `xl:` | ≥ 1280px | Max container width, larger spacing |
 
 Always test:
+
 - Navbar collapse/expand on mobile
 - Touch target sizes (min 44×44px for buttons/links)
 - Form readability on mobile
@@ -459,6 +460,7 @@ When replacing Bootstrap with Tailwind, do this methodically:
 ## 7. Bilingual parity
 
 Every change must be applied to **both** `index.html` (French) and `indexen.html` (English):
+
 - Same Tailwind utility classes in both files
 - Same layout structure
 - Different text content (FR / EN)
@@ -483,6 +485,7 @@ Every change must be applied to **both** `index.html` (French) and `indexen.html
 ## 9. Deployment
 
 After building:
+
 ```bash
 npx tailwindcss -i ./css/input.css -o ./css/tailwind.css --minify
 ```
