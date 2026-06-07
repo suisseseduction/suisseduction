@@ -21,6 +21,9 @@
     <link rel="canonical" href="https://www.suisseduction.ch/indexen.html" />
     <link href="css/tailwind.css" rel="stylesheet" />
 
+    <!-- Scroll animations -->
+    <link href="css/animations.css" rel="stylesheet" />
+
     <!-- Font Awesome -->
     <link
       href="vendor/font-awesome/css/font-awesome.min.css"
@@ -116,7 +119,7 @@
       "
     >
       <div class="absolute inset-0 bg-black/60"></div>
-      <div class="relative z-10 px-4 text-center">
+      <div class="relative z-10 px-4 text-center hero-content">
         <img
           src="img/image(1).png"
           alt="Suisse Seduction logo"
@@ -132,11 +135,17 @@
     <section id="about" class="bg-light py-24">
       <div class="container mx-auto px-6">
         <div class="text-center">
-          <h2 class="section-heading">The process</h2>
-          <p class="section-subheading">The coaching step-by-step</p>
+          <h2 class="section-heading" data-animate="fade-in-up">The process</h2>
+          <p
+            class="section-subheading"
+            data-animate="fade-in-up"
+            data-animate-delay="100"
+          >
+            The coaching step-by-step
+          </p>
         </div>
         <ul class="timeline">
-          <li>
+          <li data-animate="fade-in-left" data-animate-delay="100">
             <div class="timeline-image">
               <img src="img/about/mision.jpg" alt="" />
             </div>
@@ -158,7 +167,11 @@
               </div>
             </div>
           </li>
-          <li class="timeline-inverted">
+          <li
+            class="timeline-inverted"
+            data-animate="fade-in-right"
+            data-animate-delay="250"
+          >
             <div class="timeline-image">
               <img src="img/about/valores.jpg" alt="" />
             </div>
@@ -178,7 +191,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-animate="fade-in-left" data-animate-delay="400">
             <div class="timeline-image">
               <img src="img/about/fundacion.jpg" alt="" />
             </div>
@@ -198,7 +211,11 @@
               </div>
             </div>
           </li>
-          <li class="timeline-inverted">
+          <li
+            class="timeline-inverted"
+            data-animate="fade-in-right"
+            data-animate-delay="550"
+          >
             <div class="timeline-image">
               <img src="img/about/recursos.jpg" alt="" />
             </div>
@@ -220,7 +237,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-animate="fade-in-left" data-animate-delay="700">
             <div class="timeline-image">
               <img src="img/about/instalaciones.jpg" alt="" />
             </div>
@@ -249,12 +266,22 @@
     <!-- Services Section -->
     <section id="services" class="bg-white px-6 py-24">
       <div class="mx-auto max-w-6xl">
-        <h2 class="section-heading">Services</h2>
-        <p class="section-subheading">Everything I can do for you.</p>
+        <h2 class="section-heading" data-animate="fade-in-up">Services</h2>
+        <p
+          class="section-subheading"
+          data-animate="fade-in-up"
+          data-animate-delay="100"
+        >
+          Everything I can do for you.
+        </p>
 
         <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           <!-- Service 1 -->
-          <div class="text-center">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="100"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-file-o fa-stack-1x fa-inverse"></i>
@@ -270,7 +297,11 @@
           </div>
 
           <!-- Service 2 -->
-          <div class="text-center">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="200"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
@@ -286,7 +317,11 @@
           </div>
 
           <!-- Service 3 -->
-          <div class="text-center">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="300"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
@@ -302,7 +337,11 @@
           </div>
 
           <!-- Service 4 -->
-          <div class="text-center">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="400"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
@@ -318,7 +357,11 @@
           </div>
 
           <!-- Service 5 -->
-          <div class="text-center">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="500"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-certificate fa-stack-1x fa-inverse"></i>
@@ -334,7 +377,11 @@
           </div>
 
           <!-- Service 6 -->
-          <div class="text-center">
+          <div
+            class="text-center"
+            data-animate="fade-in-up"
+            data-animate-delay="600"
+          >
             <span class="fa-stack fa-4x mb-4">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
@@ -355,14 +402,20 @@
     <!-- Prices Section -->
     <section id="prices" class="bg-light px-6 py-24">
       <div class="mx-auto max-w-5xl">
-        <h2 class="section-heading">Prices</h2>
-        <p class="section-subheading">The first 20 mins call is free.</p>
+        <h2 class="section-heading" data-animate="fade-in-up">Prices</h2>
+        <p
+          class="section-subheading"
+          data-animate="fade-in-up"
+          data-animate-delay="100"
+        >
+          The first 20 mins call is free.
+        </p>
 
         <div class="overflow-x-auto">
           <table
             class="w-full border-collapse bg-white shadow-card rounded-2xl overflow-hidden"
           >
-            <thead>
+            <thead data-animate="fade-in-up" data-animate-delay="150">
               <tr class="bg-dark text-white">
                 <th
                   class="px-6 py-4 text-left font-heading text-sm font-bold uppercase"
@@ -382,7 +435,11 @@
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-              <tr class="hover:bg-gray-50 transition-colors">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="200"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -398,7 +455,11 @@
                   Free
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="300"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -413,7 +474,11 @@
                   Free
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="400"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -429,7 +494,11 @@
                   90 CHF/hour
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="500"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -448,7 +517,11 @@
                   </span>
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="600"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -463,7 +536,11 @@
                   150 CHF/hour
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="700"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -481,7 +558,11 @@
                   600 CHF
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition-colors">
+              <tr
+                class="hover:bg-gray-50 transition-colors"
+                data-animate="fade-in-up"
+                data-animate-delay="800"
+              >
                 <td
                   class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
                 >
@@ -501,18 +582,20 @@
             </tbody>
           </table>
         </div>
-
-        <p class="mt-8 text-center font-body text-sm text-gray-500">
-          The first 20 minutes of the call are free.
-        </p>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="bg-dark px-6 py-24">
       <div class="mx-auto max-w-4xl">
-        <h2 class="section-heading text-white">Contact</h2>
-        <p class="section-subheading text-gray-400">
+        <h2 class="section-heading text-white" data-animate="fade-in-up">
+          Contact
+        </h2>
+        <p
+          class="section-subheading text-gray-400"
+          data-animate="fade-in-up"
+          data-animate-delay="100"
+        >
           Ready to transform your love life?
           <br />
           Get in touch for personalized coaching
@@ -521,6 +604,8 @@
         </p>
 
         <form
+          data-animate="fade-in-up"
+          data-animate-delay="200"
           action="https://formspree.io/f/xqaawzdl"
           method="POST"
           class="mx-auto max-w-2xl"
@@ -583,7 +668,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark-darker px-6 py-12">
+    <footer class="bg-dark-darker px-6 py-12" data-animate="fade-in">
       <div class="mx-auto max-w-6xl text-center">
         <i class="fa fa-envelope-o fa-3x text-gray-400 mb-4 inline-block"></i>
         <p class="font-body text-base text-gray-400">info@suisseduction.ch</p>
@@ -594,6 +679,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/change_language_en.js"></script>
+    <script src="js/scroll-animations.js"></script>
 
     <script>
       // Mobile nav toggle
