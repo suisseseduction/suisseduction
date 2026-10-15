@@ -321,6 +321,10 @@ section {
   padding: clamp(2rem, 5vw, 4rem);
 }
 
+.process-panel-title {
+  display: none;
+}
+
 .process-panel p {
   max-width: 58ch;
   margin: 0 0 1rem;
@@ -753,8 +757,47 @@ footer p {
 }
 
 @media (max-width: 767px) {
-  .process-panel {
+  .process-stepper {
+    display: block;
+  }
+
+  .process-navigation {
+    display: none;
+  }
+
+  .process-panels {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .process-panel,
+  #process-fr-01:checked ~ .process-panels .process-panel,
+  #process-en-01:checked ~ .process-panels .process-panel,
+  #process-fr-02:checked ~ .process-panels .process-panel,
+  #process-en-02:checked ~ .process-panels .process-panel,
+  #process-fr-03:checked ~ .process-panels .process-panel,
+  #process-en-03:checked ~ .process-panels .process-panel,
+  #process-fr-04:checked ~ .process-panels .process-panel,
+  #process-en-04:checked ~ .process-panels .process-panel,
+  #process-fr-05:checked ~ .process-panels .process-panel,
+  #process-en-05:checked ~ .process-panels .process-panel {
+    display: block;
     min-height: 0;
+    animation: none;
+  }
+
+  .process-panel-title {
+    display: block;
+    margin: 0 0 0.8rem;
+    color: var(--site-ink);
+    font-family: var(--font-heading);
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .process-panel .process-panel-eyebrow {
+    margin-bottom: 1rem;
   }
 
   .process-panel-copy {

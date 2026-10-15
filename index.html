@@ -171,6 +171,7 @@
           <div class="process-panels">
             <article class="process-panel" data-process-panel="01" aria-label="Mon approche">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">01 · Mon approche</h3>
                 <p class="process-panel-eyebrow">Une méthode fondée sur l’expérience</p>
                 <p>Après <strong>12 années d'étude et de pratique menées avec passion</strong>, j'ai obtenu de très bons résultats dans ma propre vie amoureuse. Depuis plusieurs années, j'accompagne également des clients et les aide à progresser dans leur parcours amoureux.</p>
                 <p>Fort de cette expérience, j'ai développé <strong>une approche simple et concrète</strong>, ainsi que des exercices ciblés et adaptés à tes objectifs.</p>
@@ -178,6 +179,7 @@
             </article>
             <article class="process-panel" data-process-panel="02" aria-label="Premier échange">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">02 · Premier échange</h3>
                 <p class="process-panel-eyebrow">Un premier échange en toute confiance</p>
                 <p>Lors d'un <strong>appel vidéo gratuit de 20 minutes, sans engagement</strong>, nous faisons le point sur tes besoins.</p>
                 <p>Tu me dis ce que tu souhaites améliorer, puis nous voyons si le coaching correspond à tes attentes. <strong>Tout ce que tu partages avec moi reste confidentiel.</strong></p>
@@ -185,6 +187,7 @@
             </article>
             <article class="process-panel" data-process-panel="03" aria-label="Programme personnalisé">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">03 · Programme personnalisé</h3>
                 <p class="process-panel-eyebrow">Un accompagnement adapté à toi</p>
                 <p>Si tu souhaites continuer, je prépare <strong>un programme adapté à tes objectifs</strong>.</p>
                 <p>Tu reçois aussi un guide pratique qui présente les étapes de ma méthode, <strong>de la première approche à la construction d'une relation plus profonde, fondée sur la complicité et l'intimité</strong>.</p>
@@ -192,6 +195,7 @@
             </article>
             <article class="process-panel" data-process-panel="04" aria-label="Mise en pratique">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">04 · Mise en pratique</h3>
                 <p class="process-panel-eyebrow">Apprendre en situation réelle</p>
                 <p>Nous nous retrouvons à <strong>Lausanne ou Genève</strong>, en journée ou en soirée, selon la formule choisie.</p>
                 <p>Je peux d'abord montrer une approche et t'expliquer les points importants. Ensuite, tu pratiques progressivement, <strong>avec mes conseils et mes retours à chaque étape</strong>.</p>
@@ -199,6 +203,7 @@
             </article>
             <article class="process-panel" data-process-panel="05" aria-label="Bilan et suite">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">05 · Bilan et suite</h3>
                 <p class="process-panel-eyebrow">Des progrès qui se construisent</p>
                 <p>Rejoins les centaines de clients qui ont progressé dans leurs relations. Chaque séance t'aide à pratiquer, à reconnaître <strong>tes progrès</strong> et à te sentir plus à l'aise pour engager la conversation et créer une interaction détendue avec une femme.</p>
                 <p>Après chaque séance, nous faisons le point, <strong>identifions les points à améliorer et fixons des prochaines étapes claires</strong>. Tu repars avec <strong>des outils concrets</strong> et <strong>davantage de confiance</strong> pour continuer à progresser de manière autonome.</p>
@@ -568,6 +573,7 @@
       var processStepper = document.querySelector('.process-stepper');
       if (
         processStepper &&
+        window.matchMedia('(min-width: 768px)').matches &&
         !window.matchMedia('(prefers-reduced-motion: reduce)').matches
       ) {
         var processChoices = Array.from(

@@ -171,6 +171,7 @@
           <div class="process-panels">
             <article class="process-panel" data-process-panel="01" aria-label="My approach">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">01 · My approach</h3>
                 <p class="process-panel-eyebrow">A method built on experience</p>
                 <p>With <strong>12 years of passionate study and practice</strong>, I have achieved strong results in my own dating life. For several years, I have also coached clients and helped them make progress toward their dating goals.</p>
                 <p>Drawing on this experience, I have developed a <strong>practical, straightforward approach</strong> and <strong>focused exercises tailored to your goals</strong>.</p>
@@ -178,6 +179,7 @@
             </article>
             <article class="process-panel" data-process-panel="02" aria-label="Intro call">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">02 · Intro call</h3>
                 <p class="process-panel-eyebrow">A confidential first conversation</p>
                 <p>In a <strong>free, no-obligation 20-minute video call</strong>, we discuss what you would like to improve and see whether coaching is right for you.</p>
                 <p><strong>Everything you share with me will remain confidential.</strong></p>
@@ -185,6 +187,7 @@
             </article>
             <article class="process-panel" data-process-panel="03" aria-label="Personalized program">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">03 · Personalized program</h3>
                 <p class="process-panel-eyebrow">Coaching shaped around you</p>
                 <p>If you decide to continue, I will build <strong>a programme around your goals</strong>.</p>
                 <p>You will also receive a practical guide to my method, covering each step <strong>from starting a conversation to building a deeper emotional connection and an intimate relationship</strong>.</p>
@@ -192,6 +195,7 @@
             </article>
             <article class="process-panel" data-process-panel="04" aria-label="Practice">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">04 · Practice</h3>
                 <p class="process-panel-eyebrow">Learn through real practice</p>
                 <p>We meet in <strong>Lausanne or Geneva</strong>, during the day or evening, depending on the session.</p>
                 <p>I can demonstrate an approach first and explain what to look for. Then you practise step by step, with my guidance and clear feedback as you go. <strong>We adjust the pace to your comfort</strong>, so you can build confidence and understand what to improve after each interaction.</p>
@@ -199,6 +203,7 @@
             </article>
             <article class="process-panel" data-process-panel="05" aria-label="Review and next steps">
               <div class="process-panel-copy">
+                <h3 class="process-panel-title">05 · Review and next steps</h3>
                 <p class="process-panel-eyebrow">Progress you can build on</p>
                 <p>Join hundreds of clients who have made progress in their relationships. Each session helps you practise, recognize <strong>your progress</strong>, and feel more at ease starting conversations and creating a relaxed, comfortable interaction with a woman.</p>
                 <p>After each session, we review what went well, <strong>identify what to refine and set clear next steps</strong>. You leave with <strong>practical tools</strong> and <strong>greater confidence</strong> to keep progressing on your own.</p>
@@ -565,6 +570,7 @@
       var processStepper = document.querySelector('.process-stepper');
       if (
         processStepper &&
+        window.matchMedia('(min-width: 768px)').matches &&
         !window.matchMedia('(prefers-reduced-motion: reduce)').matches
       ) {
         var processChoices = Array.from(
