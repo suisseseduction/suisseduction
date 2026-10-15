@@ -198,7 +198,7 @@
                 <h3 class="process-panel-title">04 · Mise en pratique</h3>
                 <p class="process-panel-eyebrow">Apprendre en situation réelle</p>
                 <p>Nous nous retrouvons à <strong>Lausanne ou Genève</strong>, en journée ou en soirée, selon la formule choisie.</p>
-                <p>Je peux d'abord montrer une approche et t'expliquer les points importants. Ensuite, tu pratiques progressivement, <strong>avec mes conseils et mes retours à chaque étape</strong>.</p>
+                <p>Je te montre concrètement <strong>comment susciter l'intérêt au fil d'une conversation</strong> et t'explique ce qui rend un échange vivant et naturel. Ensuite, <strong>tu t'exerces pas à pas</strong>, avec <strong>mes conseils et des retours clairs à chaque étape</strong>. <strong>Nous adaptons le rythme à ton niveau de confort</strong> pour t'aider à comprendre ce que tu peux améliorer après chaque interaction.</p>
               </div>
             </article>
             <article class="process-panel" data-process-panel="05" aria-label="Bilan et suite">
@@ -582,16 +582,22 @@
         var processTimer;
         var processPaused = false;
         var processInteracted = false;
+        var processInView = false;
 
         function startProcessRotation() {
-          if (processTimer || processPaused || processInteracted) return;
+          if (
+            processTimer ||
+            processPaused ||
+            processInteracted ||
+            !processInView
+          ) return;
           processTimer = window.setInterval(function () {
             var activeIndex = processChoices.findIndex(function (choice) {
               return choice.checked;
             });
             processChoices[(activeIndex + 1) % processChoices.length].checked =
               true;
-          }, 6500);
+          }, 4000);
         }
 
         function pauseProcessRotation() {
@@ -627,7 +633,20 @@
             processTimer = null;
           }
         });
-        startProcessRotation();
+
+        var processVisibilityObserver = new IntersectionObserver(
+          function (entries) {
+            processInView = entries[0].isIntersecting;
+            if (processInView) {
+              startProcessRotation();
+            } else {
+              window.clearInterval(processTimer);
+              processTimer = null;
+            }
+          },
+          { threshold: 0.25 },
+        );
+        processVisibilityObserver.observe(processStepper);
       }
     </script>
   </body>

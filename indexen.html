@@ -197,8 +197,8 @@
               <div class="process-panel-copy">
                 <h3 class="process-panel-title">04 · Practice</h3>
                 <p class="process-panel-eyebrow">Learn through real practice</p>
-                <p>We meet in <strong>Lausanne or Geneva</strong>, during the day or evening, depending on the session.</p>
-                <p>I can demonstrate an approach first and explain what to look for. Then you practise step by step, with my guidance and clear feedback as you go. <strong>We adjust the pace to your comfort</strong>, so you can build confidence and understand what to improve after each interaction.</p>
+                <p>We meet in Lausanne or Geneva, during the day or evening, depending on the session.</p>
+                <p>I’ll show you how to <strong>create interest as a conversation unfolds</strong> and explain what makes an exchange engaging and natural. Then <strong>you’ll practise step by step</strong>, with <strong>my guidance and clear feedback at every stage</strong>. <strong>We adapt the pace to your comfort level</strong> so you can understand what to improve after each interaction.</p>
               </div>
             </article>
             <article class="process-panel" data-process-panel="05" aria-label="Review and next steps">
@@ -579,16 +579,22 @@
         var processTimer;
         var processPaused = false;
         var processInteracted = false;
+        var processInView = false;
 
         function startProcessRotation() {
-          if (processTimer || processPaused || processInteracted) return;
+          if (
+            processTimer ||
+            processPaused ||
+            processInteracted ||
+            !processInView
+          ) return;
           processTimer = window.setInterval(function () {
             var activeIndex = processChoices.findIndex(function (choice) {
               return choice.checked;
             });
             processChoices[(activeIndex + 1) % processChoices.length].checked =
               true;
-          }, 6500);
+          }, 4000);
         }
 
         function pauseProcessRotation() {
@@ -624,7 +630,20 @@
             processTimer = null;
           }
         });
-        startProcessRotation();
+
+        var processVisibilityObserver = new IntersectionObserver(
+          function (entries) {
+            processInView = entries[0].isIntersecting;
+            if (processInView) {
+              startProcessRotation();
+            } else {
+              window.clearInterval(processTimer);
+              processTimer = null;
+            }
+          },
+          { threshold: 0.25 },
+        );
+        processVisibilityObserver.observe(processStepper);
       }
     </script>
   </body>

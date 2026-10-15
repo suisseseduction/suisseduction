@@ -364,10 +364,10 @@ section {
 #process-fr-05:checked ~ .process-navigation label[for="process-fr-05"],
 #process-en-05:checked ~ .process-navigation label[for="process-en-05"] {
   transform: translateX(0.25rem);
-  border-color: #e5e5e5;
-  background: #fff;
-  color: #171717;
-  box-shadow: 0 8px 24px rgb(0 0 0 / 5%);
+  border-color: #171717;
+  background: #222;
+  color: #fff;
+  box-shadow: 0 10px 26px rgb(0 0 0 / 18%);
 }
 
 #process-fr-01:checked ~ .process-navigation label[for="process-fr-01"] .process-step-number,
@@ -381,9 +381,9 @@ section {
 #process-fr-05:checked ~ .process-navigation label[for="process-fr-05"] .process-step-number,
 #process-en-05:checked ~ .process-navigation label[for="process-en-05"] .process-step-number {
   transform: scale(1.06);
-  border-color: #171717;
-  background: #171717;
-  color: #fff;
+  border-color: #fff;
+  background: #fff;
+  color: #171717;
 }
 
 #process-fr-01:checked ~ .process-panels [data-process-panel="01"],
