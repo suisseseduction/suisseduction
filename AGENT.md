@@ -214,6 +214,10 @@ Edit styles in `less/agency.less`, then run `gulp` to regenerate `css/agency.css
 - **Keep it static.** Do not add backends, databases, or server frameworks unless the user explicitly requests a architecture change away from GitHub Pages.
 - **Preserve bilingual parity.** When editing copy or structure, update **both** `index.html` and `indexen.html` unless the change is language-specific.
 - **Respect the business context.** Content is professional coaching for adults in Switzerland; maintain the existing tone and CHF pricing unless asked to change it.
+  - **Protect identity privacy.** The coach wants to keep their identity private, and clients' identities must also remain private. Do not add or recommend publishing identifying names, faces, contact details, client images, testimonials, or case details without explicit permission. Build credibility through clear descriptions of the coaching process and accurate, non-identifying information instead.
+  - **Communicate coaching confidentiality accurately.** The coach considers privacy and confidentiality a priority in coaching conversations. You may state this commitment, but do not imply that Formspree or another third party guarantees confidentiality, restricted access, secure storage, or deletion unless its current handling and configuration confirm it.
+  - **Keep privacy promises accurate.** Do not claim that enquiries are confidential, stored securely, deleted on request, or accessible only to particular people unless that is confirmed by the actual contact-form provider and its configuration. Explain what information is requested and how it is used only when those details are known.
+  - **Avoid em dashes in website copy.** Use commas, colons, parentheses, or separate sentences instead.
 - **Formspree is external.** Changing the form endpoint or fields requires updating the Formspree dashboard configuration as well as the HTML.
 - **Custom domain.** Do not remove or rename `CNAME` without coordinating DNS and GitHub Pages settings.
 

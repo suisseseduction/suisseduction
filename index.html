@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Coach privé de séduction et drague en Suisse Romande</title>
-    <link rel="icon" href="img/image(2).png" />
+    <link rel="icon" type="image/png" href="img/logos/logo_ss-favicon.png" />
 
     <link rel="canonical" href="https://www.suisseduction.ch/" />
 
@@ -23,6 +23,7 @@
 
     <!-- Scroll animations -->
     <link href="css/animations.css" rel="stylesheet" />
+    <link href="css/site-polish.css" rel="stylesheet" />
 
     <!-- Font Awesome -->
     <link
@@ -50,12 +51,12 @@
       style="background-color: #222222 !important; z-index: 200 !important"
     >
       <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
-        <a href="#page-top">
-          <img
-            src="img/image(1).png"
-            alt="Suisse Seduction logo"
-            class="h-10"
-          />
+        <a href="#page-top" class="brand-lockup" aria-label="Suisse Seduction, accueil">
+          <img src="img/logos/logo_ss-transparent.png" alt="" class="brand-mark" />
+          <span class="brand-wordmark" aria-hidden="true">
+            <span>SUISSE</span>
+            <span>SEDUCTION</span>
+          </span>
         </a>
 
         <!-- Desktop nav -->
@@ -129,13 +130,15 @@
     >
       <div class="absolute inset-0 bg-black/60"></div>
       <div class="relative z-10 px-4 text-center hero-content">
-        <img
-          src="img/image(1).png"
-          alt="Suisse Seduction logo"
-          class="mx-auto mb-8 h-24"
-        />
+        <div class="brand-lockup brand-lockup-hero mx-auto mb-8" role="img" aria-label="Suisse Seduction">
+          <img src="img/logos/logo_ss-transparent.png" alt="" class="brand-mark" />
+          <span class="brand-wordmark" aria-hidden="true">
+            <span>SUISSE</span>
+            <span>SEDUCTION</span>
+          </span>
+        </div>
         <p class="font-heading text-xl font-normal text-gray-200 md:text-3xl">
-          Coach privé de drague &amp; séduction
+          Coach privé en séduction en Suisse
         </p>
       </div>
     </header>
@@ -144,140 +147,67 @@
     <section id="about" class="bg-light py-24">
       <div class="container mx-auto px-6">
         <div class="text-center">
-          <h2 class="section-heading" data-animate="fade-in-up">
-            Le processus
-          </h2>
-          <p
-            class="section-subheading"
-            data-animate="fade-in-up"
-            data-animate-delay="100"
-          >
+          <h2 class="section-heading" data-animate="fade-in-up">Le processus</h2>
+          <p class="section-subheading" data-animate="fade-in-up" data-animate-delay="100">
             Comment se déroulera le coaching
           </p>
         </div>
-        <ul class="timeline">
-          <li data-animate="fade-in-left" data-animate-delay="100">
-            <div class="timeline-image">
-              <img src="img/about/mision.jpg" alt="" />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Qui suis-je ?</h4>
+
+        <div class="process-stepper">
+          <input class="process-choice" type="radio" name="process-fr" id="process-fr-01" checked />
+          <input class="process-choice" type="radio" name="process-fr" id="process-fr-02" />
+          <input class="process-choice" type="radio" name="process-fr" id="process-fr-03" />
+          <input class="process-choice" type="radio" name="process-fr" id="process-fr-04" />
+          <input class="process-choice" type="radio" name="process-fr" id="process-fr-05" />
+
+          <div class="process-navigation" role="navigation" aria-label="Étapes du coaching">
+            <label class="process-step" for="process-fr-01"><span class="process-step-number">01</span><span class="process-step-title">Mon approche</span></label>
+            <label class="process-step" for="process-fr-02"><span class="process-step-number">02</span><span class="process-step-title">Premier échange</span></label>
+            <label class="process-step" for="process-fr-03"><span class="process-step-number">03</span><span class="process-step-title">Programme personnalisé</span></label>
+            <label class="process-step" for="process-fr-04"><span class="process-step-number">04</span><span class="process-step-title">Mise en pratique</span></label>
+            <label class="process-step" for="process-fr-05"><span class="process-step-number">05</span><span class="process-step-title">Bilan et suite</span></label>
+          </div>
+
+          <div class="process-panels">
+            <article class="process-panel" data-process-panel="01" aria-label="Mon approche">
+              <div class="process-panel-copy">
+                <p class="process-panel-eyebrow">Une méthode fondée sur l’expérience</p>
+                <p>Après <strong>12 années d'étude et de pratique menées avec passion</strong>, j'ai obtenu de très bons résultats dans ma propre vie amoureuse. Depuis plusieurs années, j'accompagne également des clients et les aide à progresser dans leur parcours amoureux.</p>
+                <p>Fort de cette expérience, j'ai développé <strong>une approche simple et concrète</strong>, ainsi que des exercices ciblés et adaptés à tes objectifs.</p>
               </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Depuis 12 ans, je suis dans le monde de la séduction. J'ai
-                  appris avec les meilleurs coachs et j'ai vécu de nombreuses
-                  aventures grâce à l'art de la drague. Après un long processus,
-                  j'ai réussi à connecter et à coucher avec les filles de mes
-                  rêves, plus de 300 au total en étant très sélectif.
-                  Maintenant, ma mission est de te transmettre mes connaissances
-                  de la manière la plus pratique, simple et efficace possible.
-                  J'ai encadré des dizaines d'élèves avec des résultats
-                  incroyables. Es-tu prêt à être le prochain ?
-                </p>
+            </article>
+            <article class="process-panel" data-process-panel="02" aria-label="Premier échange">
+              <div class="process-panel-copy">
+                <p class="process-panel-eyebrow">Un premier échange en toute confiance</p>
+                <p>Lors d'un <strong>appel vidéo gratuit de 20 minutes, sans engagement</strong>, nous faisons le point sur tes besoins.</p>
+                <p>Tu me dis ce que tu souhaites améliorer, puis nous voyons si le coaching correspond à tes attentes. <strong>Tout ce que tu partages avec moi reste confidentiel.</strong></p>
               </div>
-            </div>
-          </li>
-          <li
-            class="timeline-inverted"
-            data-animate="fade-in-right"
-            data-animate-delay="250"
-          >
-            <div class="timeline-image">
-              <img src="img/about/valores.jpg" alt="" />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>À l'écoute de tes besoins</h4>
+            </article>
+            <article class="process-panel" data-process-panel="03" aria-label="Programme personnalisé">
+              <div class="process-panel-copy">
+                <p class="process-panel-eyebrow">Un accompagnement adapté à toi</p>
+                <p>Si tu souhaites continuer, je prépare <strong>un programme adapté à tes objectifs</strong>.</p>
+                <p>Tu reçois aussi un guide pratique qui présente les étapes de ma méthode, <strong>de la première approche à la construction d'une relation plus profonde, fondée sur la complicité et l'intimité</strong>.</p>
               </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Commençons par le début : un premier appel en toute
-                  confidentialité et sans engagement. Nous ferons connaissance
-                  pendant l'appel. J'écouterai tes besoins et où tu en es dans
-                  ta relation avec les filles. Nous analyserons tes points forts
-                  et tes points faibles. En fonction de l'appel, nous déciderons
-                  librement si nous voulons nous engager dans le coaching ou
-                  non.
-                </p>
+            </article>
+            <article class="process-panel" data-process-panel="04" aria-label="Mise en pratique">
+              <div class="process-panel-copy">
+                <p class="process-panel-eyebrow">Apprendre en situation réelle</p>
+                <p>Nous nous retrouvons à <strong>Lausanne ou Genève</strong>, en journée ou en soirée, selon la formule choisie.</p>
+                <p>Je peux d'abord montrer une approche et t'expliquer les points importants. Ensuite, tu pratiques progressivement, <strong>avec mes conseils et mes retours à chaque étape</strong>.</p>
               </div>
-            </div>
-          </li>
-          <li data-animate="fade-in-left" data-animate-delay="400">
-            <div class="timeline-image">
-              <img src="img/about/fundacion.jpg" alt="" />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Programme personnalisé</h4>
+            </article>
+            <article class="process-panel" data-process-panel="05" aria-label="Bilan et suite">
+              <div class="process-panel-copy">
+                <p class="process-panel-eyebrow">Des progrès qui se construisent</p>
+                <p>Rejoins les centaines de clients qui ont progressé dans leurs relations. Chaque séance t'aide à pratiquer, à reconnaître <strong>tes progrès</strong> et à te sentir plus à l'aise pour engager la conversation et créer une interaction détendue avec une femme.</p>
+                <p>Après chaque séance, nous faisons le point, <strong>identifions les points à améliorer et fixons des prochaines étapes claires</strong>. Tu repars avec <strong>des outils concrets</strong> et <strong>davantage de confiance</strong> pour continuer à progresser de manière autonome.</p>
               </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Si nous décidons de nous embarquer dans l'aventure ensemble,
-                  je créerai un programme personnalisé et détaillé adapté à tes
-                  objectifs pour les atteindre. Je t'enverrai également un guide
-                  avec ma propre méthode de drague, expliquant en détail tout le
-                  processus, depuis l'abordage d'une fille jusqu'au moment où
-                  elle est folle d'amour pour toi.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li
-            class="timeline-inverted"
-            data-animate="fade-in-right"
-            data-animate-delay="550"
-          >
-            <div class="timeline-image">
-              <img src="img/about/recursos.jpg" alt="" />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Sorties</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  C'est le moment de passer à l'action ! Toute la théorie du
-                  monde est inutile sans pratique. Nous sortirons ensemble à
-                  Lausanne ou à Genève, selon ton choix : la nuit dans des pubs
-                  et des boîtes de nuit (night game) ou pendant la journée dans
-                  la rue (day game). Je ferai d'abord les approches pour te
-                  donner des exemples pratiques, afin que tu puisses ensuite les
-                  reproduire. Nous progresserons progressivement, du plus simple
-                  au plus complexe. Je peux t'assurer que nous allons bien nous
-                  amuser.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li data-animate="fade-in-left" data-animate-delay="700">
-            <div class="timeline-image">
-              <img src="img/about/instalaciones.jpg" alt="" />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Résultats</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  À la fin de chaque séance, nous analyserons chaque interaction
-                  et je te donnerai mon feedback et des conseils pour
-                  t'améliorer : le langage corporel, quoi dire à chaque moment
-                  de la conversation pour mettre l'autre personne à l'aise, quel
-                  message envoyer pour maintenir son intérêt... Chaque
-                  interaction avec une fille sera meilleure que la précédente.
-                  Ce n'est qu'une question de temps avant que tu finisses avec
-                  la fille de tes rêves. Ce qui semblait impossible au début
-                  deviendra inévitable.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- Services Section -->
     <section id="services" class="bg-white px-6 py-24">
       <div class="mx-auto max-w-6xl">
@@ -305,9 +235,10 @@
               Théorie simplifiée
             </h4>
             <p class="text-gray-600">
-              Dès le premier jour, l'élève recevra un livre avec ma méthode pas
-              à pas pour séduire la fille de ses rêves. C'est un livre exclusif
-              que j'ai écrit de façon continue depuis il y a 5 ans.
+              Dès le début, tu reçois un guide qui présente une méthode claire,
+              étape par étape, pour aborder les rencontres, créer une connexion
+              et faire évoluer un échange. Je l'enrichis depuis cinq ans à
+              partir de mon expérience.
             </p>
           </div>
 
@@ -325,9 +256,10 @@
               Augmenter ta valeur
             </h4>
             <p class="text-gray-600">
-              Il y a qu'une seule opportunité de faire une première impression
-              et là ta valeur perçue compte. On travaillera ensemble ta tenue,
-              ton langage corporel, ta voix et tes réseaux sociaux.
+              Nous travaillons les éléments qui contribuent à une première
+              impression authentique : ta tenue, ta posture, ton langage
+              corporel, ta voix et ta présence en ligne. L'objectif est de
+              présenter une image cohérente avec ta personnalité.
             </p>
           </div>
 
@@ -345,10 +277,10 @@
               Motivation
             </h4>
             <p class="text-gray-600">
-              Je te pousserai à pratiquer et à surmonter ta peur du rejet. Je
-              suis passé par là — j'ai été rejeté des centaines de fois au
-              début. On est dans ce processus ensemble, et je ferai en sorte
-              qu'on obtienne des résultats.
+              Je t'accompagne pour passer à l'action, apprivoiser la peur du
+              rejet et tirer des enseignements de chaque expérience. Nous
+              avançons à ton rythme, avec des objectifs concrets et des
+              encouragements pour t'aider à rester régulier.
             </p>
           </div>
 
@@ -366,9 +298,10 @@
               Apps de rencontre
             </h4>
             <p class="text-gray-600">
-              Optimise ton profil avec de nouvelles photos professionnelles et
-              une description captivante, conçue pour mener à des conversations
-              profondes et multiplier tes matchs sur Tinder et Bumble.
+              Nous optimisons ensemble ton profil Tinder ou Bumble : choix des
+              photos, présentation et premiers messages. L'objectif est de
+              montrer qui tu es et de favoriser des conversations naturelles,
+              sans chercher à jouer un personnage.
             </p>
           </div>
 
@@ -386,9 +319,10 @@
               Nightgame &amp; Daygame
             </h4>
             <p class="text-gray-600">
-              Sorties nocturnes en pub/club (22h-5h) ou journées de drague de
-              rue dans les lieux animés de Lausanne et Genève. Débriefing et
-              feedback après chaque session pour que tu puisses t'améliorer.
+              Nous pratiquons dans des lieux réels à Lausanne ou Genève, en
+              journée ou en soirée. Je peux d'abord te montrer une approche,
+              puis tu essaies avec mes retours. Après la session, nous faisons
+              le point sur ce qui a fonctionné et ce que tu peux améliorer.
             </p>
           </div>
 
@@ -406,9 +340,10 @@
               Text game
             </h4>
             <p class="text-gray-600">
-              J'analyserai tes conversations par messages pour optimiser chaque
-              texte envoyé, les temporiser correctement et maintenir toujours
-              une dynamique stimulante et directionnelle.
+              Nous analysons tes échanges pour travailler le ton, le rythme et
+              le bon moment pour proposer un rendez-vous. Tu apprends à écrire
+              des messages naturels qui te ressemblent et font avancer la
+              conversation.
             </p>
           </div>
         </div>
@@ -417,186 +352,72 @@
 
     <!-- Prices Section -->
     <section id="prices" class="bg-light px-6 py-24">
-      <div class="mx-auto max-w-5xl">
+      <div class="mx-auto max-w-6xl">
         <h2 class="section-heading" data-animate="fade-in-up">Tarifs</h2>
-        <p
-          class="section-subheading"
-          data-animate="fade-in-up"
-          data-animate-delay="100"
-        >
-          Les 20 premières minutes d'appel sont gratuites.
+        <p class="section-subheading" data-animate="fade-in-up" data-animate-delay="100">
+          Commence par un appel vidéo gratuit de 20 minutes, sans engagement.
         </p>
 
-        <div class="overflow-x-auto">
-          <table
-            class="w-full border-collapse bg-white shadow-card rounded-2xl overflow-hidden"
-          >
-            <thead data-animate="fade-in-up" data-animate-delay="150">
-              <tr class="bg-dark text-white">
-                <th
-                  class="px-6 py-4 text-left font-heading text-sm font-bold uppercase"
-                >
-                  Service
-                </th>
-                <th
-                  class="px-6 py-4 text-left font-heading text-sm font-bold uppercase"
-                >
-                  Format
-                </th>
-                <th
-                  class="px-6 py-4 text-right font-heading text-sm font-bold uppercase"
-                >
-                  Tarif
-                </th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr
-                class="hover:bg-gray-50 transition-colors"
-                data-animate="fade-in-up"
-                data-animate-delay="200"
-              >
-                <td
-                  class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
-                >
-                  Guide de séduction en pdf
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
-                  Une synthèse de ma méthode, remplie de techniques efficaces
-                  pour chaque situation que tu pourrais rencontrer.
-                </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-primary"
-                >
-                  Gratuit
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-gray-50 transition-colors"
-                data-animate="fade-in-up"
-                data-animate-delay="300"
-              >
-                <td
-                  class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
-                >
-                  Premier Coaching — Introduction
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
-                  Appel vidéo (20 minutes)
-                </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-primary"
-                >
-                  Gratuit
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-gray-50 transition-colors"
-                data-animate="fade-in-up"
-                data-animate-delay="400"
-              >
-                <td
-                  class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
-                >
-                  Coaching en ligne
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
-                  Appel vidéo. Nous discuterons de tout sujet de votre choix.
-                  Stratégies de messagerie, conseils de rencontre, astuces
-                  Tinder/Bumble, etc.
-                </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900"
-                >
-                  90 CHF/heure
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-gray-50 transition-colors"
-                data-animate="fade-in-up"
-                data-animate-delay="500"
-              >
-                <td
-                  class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
-                >
-                  Nightgame — Pub / Club
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
-                  En face à face. À Lausanne ou Genève. Vendredi ou samedi soir.
-                </td>
-                <td class="px-6 py-4 text-right font-heading font-bold">
-                  <div class="text-sm text-gray-900">120 CHF/heure</div>
-                  <div class="text-sm text-primary">400 CHF/soirée</div>
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-gray-50 transition-colors"
-                data-animate="fade-in-up"
-                data-animate-delay="600"
-              >
-                <td
-                  class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
-                >
-                  Daygame
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
-                  En face à face. À Lausanne ou Genève. Exclusivement le samedi.
-                </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900"
-                >
-                  150 CHF/heure
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-gray-50 transition-colors"
-                data-animate="fade-in-up"
-                data-animate-delay="700"
-              >
-                <td
-                  class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
-                >
-                  Shooting pour applications de rencontre
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
-                  5 photos professionnelles retouchées et coaching en style. Le
-                  service est divisé en deux parties : une pour identifier vos
-                  atouts et améliorer votre style, une autre pour la séance
-                  photo proprement dite.
-                </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-gray-900"
-                >
-                  600 CHF
-                </td>
-              </tr>
-              <tr
-                class="hover:bg-gray-50 transition-colors"
-                data-animate="fade-in-up"
-                data-animate-delay="800"
-              >
-                <td
-                  class="px-6 py-4 font-heading text-sm font-bold text-gray-900"
-                >
-                  Voyage immersif
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-600">
-                  Un week-end dans votre ville préférée, du vendredi soir au
-                  dimanche soir. L'expérience la plus motivante et
-                  transformatrice. Garantie satisfait ou remboursé.
-                </td>
-                <td
-                  class="px-6 py-4 text-right font-heading text-sm font-bold text-primary"
-                >
-                  2400 CHF
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <h3 class="price-group-heading" data-animate="fade-in-up">Pour commencer</h3>
+        <div class="price-card-grid price-card-grid-intro">
+          <article class="price-card price-card-featured" data-animate="fade-in-up" data-animate-delay="150">
+            <div class="price-card-top">
+              <h4>Premier échange</h4>
+              <p class="price-amount">Gratuit</p>
+            </div>
+            <p>Appel vidéo de 20 minutes pour faire le point sur tes objectifs et voir si le coaching te convient.</p>
+          </article>
+          <article class="price-card" data-animate="fade-in-up" data-animate-delay="200">
+            <div class="price-card-top">
+              <h4>Guide de séduction PDF</h4>
+              <p class="price-amount">Gratuit</p>
+            </div>
+            <p>Un guide pratique qui résume ma méthode et les étapes clés des rencontres.</p>
+          </article>
+        </div>
+
+        <h3 class="price-group-heading" data-animate="fade-in-up">Coaching et formules</h3>
+        <div class="price-card-grid price-card-grid-services">
+          <article class="price-card" data-animate="fade-in-up" data-animate-delay="100">
+            <div class="price-card-top">
+              <h4>Coaching en ligne</h4>
+              <p class="price-amount">90 CHF <span>/ heure</span></p>
+            </div>
+            <p>Appel vidéo consacré à tes questions : rencontres, messages ou applications comme Tinder et Bumble.</p>
+          </article>
+          <article class="price-card" data-animate="fade-in-up" data-animate-delay="150">
+            <div class="price-card-top">
+              <h4>Nightgame, pub ou club</h4>
+              <p class="price-amount">130 CHF <span>/ heure</span></p>
+            </div>
+            <p>Coaching en face à face à Lausanne ou Genève, le vendredi ou le samedi soir.</p>
+            <p class="price-alternative"><strong>Soirée complète :</strong> 490 CHF</p>
+          </article>
+          <article class="price-card" data-animate="fade-in-up" data-animate-delay="200">
+            <div class="price-card-top">
+              <h4>Daygame</h4>
+              <p class="price-amount">150 CHF <span>/ heure</span></p>
+            </div>
+            <p>Coaching en face à face à Lausanne ou Genève, le samedi.</p>
+          </article>
+          <article class="price-card" data-animate="fade-in-up" data-animate-delay="250">
+            <div class="price-card-top">
+              <h4>Shooting pour applications</h4>
+              <p class="price-amount">600 CHF</p>
+            </div>
+            <p>Coaching en style et séance photo avec 5 photos professionnelles retouchées.</p>
+          </article>
+          <article class="price-card price-card-immersion" data-animate="fade-in-up" data-animate-delay="300">
+            <div class="price-card-top">
+              <span class="price-card-label">Expérience immersive</span>
+              <h4>Voyage immersif</h4>
+              <p class="price-amount">2400 CHF</p>
+            </div>
+            <p>Un week-end de coaching, du vendredi soir au dimanche soir, dans la ville de ton choix. Garantie satisfait ou remboursé.</p>
+          </article>
         </div>
       </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="bg-dark px-6 py-24">
       <div class="mx-auto max-w-4xl">
@@ -623,6 +444,10 @@
           class="mx-auto max-w-2xl"
           name="contactForm"
         >
+          <p class="privacy-note">
+            Toutes les informations que tu me confies resteront toujours
+            confidentielles.
+          </p>
           <div class="grid gap-6 md:grid-cols-2">
             <div>
               <input
@@ -738,6 +563,66 @@
       $('#FrenchLanguage, #FrenchLanguageMobile').click(function () {
         window.location.href = 'index.html';
       });
+
+      // Let visitors discover each process step without requiring a click.
+      var processStepper = document.querySelector('.process-stepper');
+      if (
+        processStepper &&
+        !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ) {
+        var processChoices = Array.from(
+          processStepper.querySelectorAll('.process-choice'),
+        );
+        var processTimer;
+        var processPaused = false;
+        var processInteracted = false;
+
+        function startProcessRotation() {
+          if (processTimer || processPaused || processInteracted) return;
+          processTimer = window.setInterval(function () {
+            var activeIndex = processChoices.findIndex(function (choice) {
+              return choice.checked;
+            });
+            processChoices[(activeIndex + 1) % processChoices.length].checked =
+              true;
+          }, 6500);
+        }
+
+        function pauseProcessRotation() {
+          processPaused = true;
+          window.clearInterval(processTimer);
+          processTimer = null;
+        }
+
+        processChoices.forEach(function (choice) {
+          choice.addEventListener('change', function () {
+            processInteracted = true;
+            window.clearInterval(processTimer);
+            processTimer = null;
+          });
+        });
+
+        processStepper.addEventListener('pointerenter', pauseProcessRotation);
+        processStepper.addEventListener('pointerleave', function () {
+          processPaused = false;
+          startProcessRotation();
+        });
+        processStepper.addEventListener('focusin', pauseProcessRotation);
+        processStepper.addEventListener('focusout', function (event) {
+          if (!processStepper.contains(event.relatedTarget)) {
+            processPaused = false;
+            startProcessRotation();
+          }
+        });
+        processStepper.addEventListener('click', function (event) {
+          if (event.target.closest('.process-step')) {
+            processInteracted = true;
+            window.clearInterval(processTimer);
+            processTimer = null;
+          }
+        });
+        startProcessRotation();
+      }
     </script>
   </body>
 </html>

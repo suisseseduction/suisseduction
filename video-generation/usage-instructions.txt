@@ -1,0 +1,60 @@
+USAGE INSTRUCTIONS FOR SUISSDUCTION VIDEO
+
+VIDEO FILE: suisseduction-ultra-simple.mp4
+DURATION: 25 seconds
+RESOLUTION: 1280x720 HD
+FORMAT: MP4 (H.264 codec)
+
+RECOMMENDED USES:
+
+1. SOCIAL MEDIA:
+   - Instagram Stories/Reels (9:16 version can be created)
+   - Facebook Video Ads
+   - Twitter/X Video Posts
+   - LinkedIn Company Updates
+   - TikTok Background Content
+
+2. WEBSITE:
+   - Hero section background video
+   - About page background
+   - Service page visual element
+   - Loading screen animation
+   - Footer or sidebar accent
+
+3. PRESENTATIONS:
+   - Opening slide for pitches or webinars
+   - Transition between presentation sections
+   - Background during Q&A sessions
+   - Webinar intro/outro
+
+4. ADVERTISING:
+   - YouTube pre-roll ads (trim to 15-30 seconds)
+   - Display network video ads
+   - Retargeting campaign visuals
+   - Event promotion materials
+
+5. EMAIL MARKETING:
+   - Embedded video in newsletters
+   - Animated GIF version for email clients
+   - Visual enhancement to promotional emails
+
+TECHNICAL SPECS:
+- Frame rate: 30 fps
+- Color space: yuv420p
+- Audio: None (silent - add music as needed)
+- Compatible with: All modern browsers, social platforms, video editors
+
+CUSTOMIZATION:
+To add music: Use any audio editing tool to overlay background music
+To add logo: Overlay your logo in a corner using video editing software
+To change duration: Loop the video or trim sections as needed
+To create vertical version: Use crop filters for 9:16 aspect ratio
+
+BRAND COLORS USED:
+- #222222 - Dark background (website nav/body)
+- #f8f9fa - Light background (website sections)
+- #ffffff - White (clean/minimalist areas)
+- #ff6b6b - Primary color (website text-primary)
+- #4ecdc4 - Accent/complementary color
+
+The video is designed to be loopable if needed for longer background use.
